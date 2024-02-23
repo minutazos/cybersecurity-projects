@@ -1,0 +1,7 @@
+1- we start with an nmap and we found port 22 and 80 open
+2- we visit the webpage and we found the cacti software v1.2.22
+3- we launch a dirbuster and at the same time we look for vulnerabilities on this version for this software
+4- we found CVE-2022-46169, a remote code execution is possible!
+5- http://10.10.11.211/remote_agent.php is the exploitable endpoint, with the following arguments: action=polldata&host_id=?&local_data_ids[]=?&poller_id=1(executable cmd here)
+	If we run polldata action with the correct host_id and local_data_ids[] values we can execute a command passed on poller_id
+6- we develop an exploit which will try different host_id and local_data_ids[] values to see which can let us execute the command

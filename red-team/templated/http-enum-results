@@ -1,0 +1,395 @@
+PORT      STATE SERVICE VERSION
+30623/tcp open  http    Werkzeug httpd 1.0.1 (Python 3.9.0)
+|_http-server-header: Werkzeug/1.0.1 Python/3.9.0
+| http-enum: 
+|   /reg_1.htm: Polycom IP phone
+|   /adr.htm: Snom IP Phone
+|   /line_login.htm?l=1: Snom IP Phone
+|   /tbook.csv: Snom IP Phone
+|   /globalSIPsettings.html: Aastra IP Phone
+|   /SIPsettingsLine1.html: Aastra IP Phone
+|   /login.stm: Belkin G Wireless Router
+|   /tools_admin.php: D-Link DIR-300
+|   /bsc_lan.php: D-Link DIR-300, DIR-320, DIR-615 revD
+|   /Manage.tri: Linksys WRT54G2
+|   //system.html: CMNC-200 IP Camera
+|   /main_configure.cgi: Intellinet IP Camera
+|   /awstatstotals.php: AWStats Totals
+|   /cal_search.php: ExtCalendar
+|   /a_viewusers.php: Andys PHP Knowledgebase
+|   /LightNEasy.php?do=login: LightNEasy
+|   /channel_detail.php: DzTube
+|   /vbseo.php: vBSEO
+|   /admin.php: Possible admin folder
+|   /login.php: Possible admin folder
+|   /adminpanel.html: Possible admin folder
+|   /webadmin.html: Possible admin folder
+|   /admin_login.html: Possible admin folder
+|   /cp.php: Possible admin folder
+|   /admin_login.php: Possible admin folder
+|   /administrator.php: Possible admin folder
+|   /admin-login.php: Possible admin folder
+|   /moderator.php: Possible admin folder
+|   /account.php: Possible admin folder
+|   /admin-login.html: Possible admin folder
+|   /controlpanel.php: Possible admin folder
+|   /admincontrol.php: Possible admin folder
+|   /adminLogin.html: Possible admin folder
+|   /home.html: Possible admin folder
+|   /webadmin.php: Possible admin folder
+|   /admin.html: Possible admin folder
+|   /cp.html: Possible admin folder
+|   /adminpanel.php: Possible admin folder
+|   /moderator.html: Possible admin folder
+|   /user.html: Possible admin folder
+|   /administrator.html: Possible admin folder
+|   /login.html: Possible admin folder
+|   /adm.html: Possible admin folder
+|   /user.php: Possible admin folder
+|   /account.html: Possible admin folder
+|   /controlpanel.html: Possible admin folder
+|   /admincontrol.html: Possible admin folder
+|   /wp-login.php: Possible admin folder
+|   /wp-json: Possible admin folder
+|   /adminLogin.php: Possible admin folder
+|   /admloginuser.php: Possible admin folder
+|   /admin2.php: Possible admin folder
+|   /adm.php: Possible admin folder
+|   /affiliate.php: Possible admin folder
+|   /adm_auth.php: Possible admin folder
+|   /memberadmin.php: Possible admin folder
+|   /administratorlogin.php: Possible admin folder
+|   /account.cfm: Possible admin folder
+|   /admin.cfm: Possible admin folder
+|   /admin_login.cfm: Possible admin folder
+|   /adminpanel.cfm: Possible admin folder
+|   /admincontrol.cfm: Possible admin folder
+|   /moderator.cfm: Possible admin folder
+|   /adm.cfm: Possible admin folder
+|   /adm_auth.cfm: Possible admin folder
+|   /administratorlogin.cfm: Possible admin folder
+|   /webadmin.cfm: Possible admin folder
+|   /login.cfm: Possible admin folder
+|   /administrator.cfm: Possible admin folder
+|   /adminLogin.cfm: Possible admin folder
+|   /memberadmin.cfm: Possible admin folder
+|   /admloginuser.cfm: Possible admin folder
+|   /user.cfm: Possible admin folder
+|   /controlpanel.cfm: Possible admin folder
+|   /cp.cfm: Possible admin folder
+|   /admin-login.cfm: Possible admin folder
+|   /account.asp: Possible admin folder
+|   /admin.asp: Possible admin folder
+|   /admin-login.asp: Possible admin folder
+|   /cp.asp: Possible admin folder
+|   /administrator.asp: Possible admin folder
+|   /login.asp: Possible admin folder
+|   /moderator.asp: Possible admin folder
+|   /controlpanel.asp: Possible admin folder
+|   /user.asp: Possible admin folder
+|   /admincontrol.asp: Possible admin folder
+|   /adminpanel.asp: Possible admin folder
+|   /webadmin.asp: Possible admin folder
+|   /admin_login.asp: Possible admin folder
+|   /adminLogin.asp: Possible admin folder
+|   /home.asp: Possible admin folder
+|   /admloginuser.asp: Possible admin folder
+|   /admin2.asp: Possible admin folder
+|   /adm.asp: Possible admin folder
+|   /adm_auth.asp: Possible admin folder
+|   /memberadmin.asp: Possible admin folder
+|   /administratorlogin.asp: Possible admin folder
+|   /account.aspx: Possible admin folder
+|   /admin.aspx: Possible admin folder
+|   /admin-login.aspx: Possible admin folder
+|   /cp.aspx: Possible admin folder
+|   /administrator.aspx: Possible admin folder
+|   /login.aspx: Possible admin folder
+|   /moderator.aspx: Possible admin folder
+|   /controlpanel.aspx: Possible admin folder
+|   /user.aspx: Possible admin folder
+|   /admincontrol.aspx: Possible admin folder
+|   /adminpanel.aspx: Possible admin folder
+|   /webadmin.aspx: Possible admin folder
+|   /admin_login.aspx: Possible admin folder
+|   /adminLogin.aspx: Possible admin folder
+|   /home.aspx: Possible admin folder
+|   /admloginuser.aspx: Possible admin folder
+|   /admin2.aspx: Possible admin folder
+|   /adm.aspx: Possible admin folder
+|   /adm_auth.aspx: Possible admin folder
+|   /memberadmin.aspx: Possible admin folder
+|   /administratorlogin.aspx: Possible admin folder
+|   /account.jsp: Possible admin folder
+|   /admin.jsp: Possible admin folder
+|   /admin-login.jsp: Possible admin folder
+|   /cp.jsp: Possible admin folder
+|   /administrator.jsp: Possible admin folder
+|   /login.jsp: Possible admin folder
+|   /moderator.jsp: Possible admin folder
+|   /controlpanel.jsp: Possible admin folder
+|   /user.jsp: Possible admin folder
+|   /admincontrol.jsp: Possible admin folder
+|   /adminpanel.jsp: Possible admin folder
+|   /webadmin.jsp: Possible admin folder
+|   /admin_login.jsp: Possible admin folder
+|   /adminLogin.jsp: Possible admin folder
+|   /home.jsp: Possible admin folder
+|   /admloginuser.jsp: Possible admin folder
+|   /admin2.jsp: Possible admin folder
+|   /adm.jsp: Possible admin folder
+|   /adm_auth.jsp: Possible admin folder
+|   /memberadmin.jsp: Possible admin folder
+|   /administratorlogin.jsp: Possible admin folder
+|   /admin1.php: Possible admin folder
+|   /administr8.asp: Possible admin folder
+|   /administr8.php: Possible admin folder
+|   /administr8.jsp: Possible admin folder
+|   /administr8.aspx: Possible admin folder
+|   /administr8.cfm: Possible admin folder
+|   /administracao.php: Possible admin folder
+|   /administracao.asp: Possible admin folder
+|   /administracao.aspx: Possible admin folder
+|   /administracao.cfm: Possible admin folder
+|   /administracao.jsp: Possible admin folder
+|   /administracion.php: Possible admin folder
+|   /administracion.asp: Possible admin folder
+|   /administracion.aspx: Possible admin folder
+|   /administracion.jsp: Possible admin folder
+|   /administracion.cfm: Possible admin folder
+|   /admins.cfm: Possible admin folder
+|   /admins.php: Possible admin folder
+|   /admins.jsp: Possible admin folder
+|   /admins.asp: Possible admin folder
+|   /admins.aspx: Possible admin folder
+|   /AdminLogin.asp: Possible admin folder
+|   /AdminLogin.php: Possible admin folder
+|   /AdminLogin.jsp: Possible admin folder
+|   /AdminLogin.aspx: Possible admin folder
+|   /AdminLogin.cfm: Possible admin folder
+|   /admin_cp.asp: Possible admin folder
+|   /backup: Possible backup
+|   /backup.sql: Possible backup
+|   /backup.sql.gz: Possible backup
+|   /backup.sql.bz2: Possible backup
+|   /backup.zip: Possible backup
+|   /dbbackup.txt: Possible backup
+|   /b.sql: Possible database backup
+|   /db.sql: Possible database backup
+|   /ddb.sql: Possible database backup
+|   /users.sql: Possible database backup
+|   /database.sql: Possible database backup
+|   /mysql.sql: Possible database backup
+|   /dump.sql: Possible database backup
+|   /respaldo.sql: Possible database backup
+|   /data.sql: Possible database backup
+|   /old.sql: Possible database backup
+|   /usuarios.sql: Possible database backup
+|   /bdb.sql: Possible database backup
+|   /1.sql: Possible database backup
+|   /clientaccesspolicy.xml: Microsoft Silverlight crossdomain policy
+|   /atom.aspx: RSS or Atom feed
+|   /atom.php: RSS or Atom feed
+|   /atom.xml: RSS or Atom feed
+|   /atom.jsp: RSS or Atom feed
+|   /rss.aspx: RSS or Atom feed
+|   /rss.php: RSS or Atom feed
+|   /rss.xml: RSS or Atom feed
+|   /rss.jsp: RSS or Atom feed
+|   /boot.ini: Webroot might be in root folder
+|   /login.htm: Login page
+|   /login.jsp: Login page
+|   /test.asp: Test page
+|   /test.class: Test page
+|   /test.htm: Test page
+|   /test.html: Test page
+|   /test.php: Test page
+|   /test.txt: Test page
+|   /log.htm: Logs
+|   /log.php: Logs
+|   /log.asp: Logs
+|   /log.aspx: Logs
+|   /log.jsp: Logs
+|   /logs.htm: Logs
+|   /logs.php: Logs
+|   /logs.asp: Logs
+|   /logs.aspx: Logs
+|   /logs.jsp: Logs
+|   /robots.txt: Robots file
+|   /crossdomain.xml: Adobe Flash crossdomain policy
+|   /fshow.php: Horizon Web App
+|   /upload_multiple_js.php: NAS Uploader
+|   /uploadtester.asp: Free ASP Upload Shell
+|   /info.php: Possible information file
+|   /phpinfo.php: Possible information file
+|   /NETWARE.HTM: Planet FPS-1101
+|   /setup.cgi: Linksys Cisco Wag120n or similar
+|   /debug.cgi: Linksys WRT54G
+|   /tools_admin.cgi?: D-Link WBR-1310
+|   /restoreinfo.cgi: Sagem router
+|   /confirminvite.php: phpMyBitTorrent
+|   /myshop_start.php: FozzCom shopping
+|   /TopToolArea.html: Alteon OS BBI (Nortell)
+|   /switchSystem.html: Alteon OS BBI (Nortell)
+|   /fm.php: Simple File Manager
+|   /cal_cat.php: Calendarix
+|   /reqdetails.php: BtiTracker
+|   /seti.php: PHP SETI@home
+|   /updown.php: PHP Uploader Downloader
+|   /jsft_resource.jsf: JSFTemplating/Mojarra Scales/GlassFish Application Server
+|   /scales_static_resource.jsf: JSFTemplating/Mojarra Scales/GlassFish Application Server
+|   /.hgignore: Revision control ignore file
+|   /.gitignore: Revision control ignore file
+|   /.bzrignore: Revision control ignore file
+|   /S7Web.css: SCADA Siemens PCS7
+|   /Portal0000.htm: SCADA Siemens PCS7
+|   /spControl.php: IBM Proventia
+|   /NessusClient.swf: Nessus
+|   /cpqlogin.htm?RedirectUrl=/&RedirectQueryString=: HP System Management Homepage
+|   /hplogo.gif: HP System Management Homepage
+|   /ie_index.htm: HP Integrated Lights Out
+|   /ilo.gif: HP Integrated Lights Out
+|   /rrc.htm: Raritan Remote Client
+|   /happyaxis.jsp: Apache Axis2
+|   /x_logo.gif: Xerox printer
+|   /PageSelector.class: HP Printer
+|   /footer1.gif: (possible) Oracle Web server
+|   /852566C90012664F: Lotus Domino
+|   /admin4.nsf: Lotus Domino
+|   /admin5.nsf: Lotus Domino
+|   /admin.nsf: Lotus Domino
+|   /agentrunner.nsf: Lotus Domino
+|   /alog.nsf: Lotus Domino
+|   /a_domlog.nsf: Lotus Domino
+|   /bookmark.nsf: Lotus Domino
+|   /busytime.nsf: Lotus Domino
+|   /catalog.nsf: Lotus Domino
+|   /certa.nsf: Lotus Domino
+|   /certlog.nsf: Lotus Domino
+|   /certsrv.nsf: Lotus Domino
+|   /chatlog.nsf: Lotus Domino
+|   /clbusy.nsf: Lotus Domino
+|   /cldbdir.nsf: Lotus Domino
+|   /clusta4.nsf: Lotus Domino
+|   /collect4.nsf: Lotus Domino
+|   /da.nsf: Lotus Domino
+|   /dba4.nsf: Lotus Domino
+|   /dclf.nsf: Lotus Domino
+|   /DEASAppDesign.nsf: Lotus Domino
+|   /DEASLog01.nsf: Lotus Domino
+|   /DEASLog02.nsf: Lotus Domino
+|   /DEASLog03.nsf: Lotus Domino
+|   /DEASLog04.nsf: Lotus Domino
+|   /DEASLog05.nsf: Lotus Domino
+|   /DEASLog.nsf: Lotus Domino
+|   /decsadm.nsf: Lotus Domino
+|   /decslog.nsf: Lotus Domino
+|   /DEESAdmin.nsf: Lotus Domino
+|   /dirassist.nsf: Lotus Domino
+|   /doladmin.nsf: Lotus Domino
+|   /domadmin.nsf: Lotus Domino
+|   /domcfg.nsf: Lotus Domino
+|   /domguide.nsf: Lotus Domino
+|   /domlog.nsf: Lotus Domino
+|   /dspug.nsf: Lotus Domino
+|   /events4.nsf: Lotus Domino
+|   /events5.nsf: Lotus Domino
+|   /events.nsf: Lotus Domino
+|   /event.nsf: Lotus Domino
+|   /homepage.nsf: Lotus Domino
+|   /jotter.nsf: Lotus Domino
+|   /leiadm.nsf: Lotus Domino
+|   /leilog.nsf: Lotus Domino
+|   /leivlt.nsf: Lotus Domino
+|   /log4a.nsf: Lotus Domino
+|   /log.nsf: Lotus Domino
+|   /l_domlog.nsf: Lotus Domino
+|   /mab.nsf: Lotus Domino
+|   /mail10.box: Lotus Domino
+|   /mail1.box: Lotus Domino
+|   /mail2.box: Lotus Domino
+|   /mail3.box: Lotus Domino
+|   /mail4.box: Lotus Domino
+|   /mail5.box: Lotus Domino
+|   /mail6.box: Lotus Domino
+|   /mail7.box: Lotus Domino
+|   /mail8.box: Lotus Domino
+|   /mail9.box: Lotus Domino
+|   /mail.box: Lotus Domino
+|   /msdwda.nsf: Lotus Domino
+|   /mtatbls.nsf: Lotus Domino
+|   /mtstore.nsf: Lotus Domino
+|   /names.nsf: Lotus Domino
+|   /nntppost.nsf: Lotus Domino
+|   /ntsync45.nsf: Lotus Domino
+|   /perweb.nsf: Lotus Domino
+|   /qpadmin.nsf: Lotus Domino
+|   /reports.nsf: Lotus Domino
+|   /schema50.nsf: Lotus Domino
+|   /setupweb.nsf: Lotus Domino
+|   /setup.nsf: Lotus Domino
+|   /smbcfg.nsf: Lotus Domino
+|   /smconf.nsf: Lotus Domino
+|   /smency.nsf: Lotus Domino
+|   /smhelp.nsf: Lotus Domino
+|   /smmsg.nsf: Lotus Domino
+|   /smquar.nsf: Lotus Domino
+|   /smsolar.nsf: Lotus Domino
+|   /smtime.nsf: Lotus Domino
+|   /smtpibwq.nsf: Lotus Domino
+|   /smtpobwq.nsf: Lotus Domino
+|   /smtp.box: Lotus Domino
+|   /smtp.nsf: Lotus Domino
+|   /smvlog.nsf: Lotus Domino
+|   /srvnam.htm: Lotus Domino
+|   /statmail.nsf: Lotus Domino
+|   /statrep.nsf: Lotus Domino
+|   /stauths.nsf: Lotus Domino
+|   /stautht.nsf: Lotus Domino
+|   /stconfig.nsf: Lotus Domino
+|   /stconf.nsf: Lotus Domino
+|   /stdnaset.nsf: Lotus Domino
+|   /stdomino.nsf: Lotus Domino
+|   /stlog.nsf: Lotus Domino
+|   /streg.nsf: Lotus Domino
+|   /stsrc.nsf: Lotus Domino
+|   /userreg.nsf: Lotus Domino
+|   /vpuserinfo.nsf: Lotus Domino
+|   /webadmin.nsf: Lotus Domino
+|   /web.nsf: Lotus Domino
+|   /_app_bin: MS Sharepoint
+|   /_controltemplates: MS Sharepoint
+|   /_layouts: MS Sharepoint
+|   /sitedirectory: MS Sharepoint
+|   /editdocs.aspx: MS Sharepoint
+|   /mycategories.aspx: MS Sharepoint
+|   /HW_logo.html: Huawei HG 530
+|   /.htaccess: Incorrect permissions on .htaccess or .htpasswd files
+|   /.htpasswd: Incorrect permissions on .htaccess or .htpasswd files
+|   /postinfo.html: Frontpage file or folder
+|   /downloadFile.php: NETGEAR WNDAP350 2.0.1 to 2.0.9 potential file download and SSH root password disclosure
+|   /BackupConfig.php: NETGEAR WNDAP350 2.0.1 to 2.0.9 potential file download and SSH root password disclosure
+|   /Info.live.htm: Possible DD-WRT router Information Disclosure (BID 45598)
+|   /tiki-listmovies.php?movie=../../../../../../etc/passwd%001234: TikiWiki < 1.9.9 Directory Traversal Vulnerability
+|   /d41d8cd98f00b204e9800998ecf8427e.php: Seagate BlackArmorNAS 110/220/440 Administrator Password Reset Vulnerability
+|   /wp-login.php: Wordpress login page.
+|   /changelog.txt: Interesting, a changelog.
+|   /readme.html: Interesting, a readme.
+|   /cmspages.php: 2Point Solutions CMS
+|   /kbcat.cgi: ActivDesk
+|   /store.php?action=view_cart: AiCart
+|   /forum_answer.php?que_id=1: Guru JustAnswer
+|   /escort-profile.php: First Escort Marketing CMS
+|   /leftmenubody.php: Quicktech
+|   /dsp_page.cfm: Alcassofts SOPHIA CMS
+|   /uploadsnaps.php: ZeeMatri/File upload
+|   /photogallery_open.php: Heaven Soft CMS
+|   /bnnr.php: vBulletin ads_saed
+|   /weblink_cat_list.php: WHMCompleteSolution CMS
+|   /manifest.json: Manifest JSON File
+|   /Default?MAIN=DEVICE: TopAccess Toshiba e-Studio520
+|   /jwsappmngr.jnlp: netForensics
+|   /nfdesktop.jnlp: netForensics
+|   /README: Interesting, a readme.
+|   /README.txt: Interesting, a readme.
+|_  /error.html: Potentially interesting folder

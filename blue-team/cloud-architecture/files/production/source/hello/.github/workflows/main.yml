@@ -1,0 +1,53 @@
+name: deploy to AWS lambda
+on:
+  # Trigger on push or PR to master
+    push:
+        branches:
+        - deploy
+    workflow_dispatch:
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+
+      - name: checkout source code
+        uses: actions/checkout@v3
+
+      - uses: actions/setup-go@v3
+        with:
+          go-version: 1.18
+          cache: true
+          cache-dependency-path: ./go.sum
+
+      - name: build
+        run: GOOS=linux GOARCH=amd64 CGO_ENABLED=0 go build -mod=vendor -o main main.go
+
+      - uses: montudor/action-zip@v0.1.0
+        with:
+          args: zip -qq -r ./bin/lambda.zip . -i main
+
+      - uses: actions/upload-artifact@v2-preview
+        with:
+          name: lambda-zip
+          path: bin/lambda.zip
+          key: lambda.zip
+
+      - name: deploy to AWS lambda
+        uses: appleboy/lambda-action@master
+        with:
+          aws_access_key_id: ${{ secrets.AWS_ACCESS_KEY_ID }}
+          aws_secret_access_key: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
+          aws_region: ${{ secrets.AWS_REGION }}
+          function_name: lambda_function
+          source: bin/lambda.zip
+          handler: main
+          runtime: go1.x
+          timeout: 10
+          memory_size: 128
+          publish: true
+          role: ${{ secrets.AWS_ROLE }}
+          description: "Deployed by GitHub Actions"
+          environment_variables: '{"ENV":"production" "VERSION":"1.0.0" "RANDOM_NAME":"Antoine"}'
+          concurrency_limit: 100
+          reserved_concurrent_executions: 100

@@ -1,0 +1,6 @@
+1- We download the file and launch vuln program
+2- They ask for input, so we put a lot of characters to see if its BOF vulnerable
+3- We get a segmentation violation, so it is.
+4- We open the program on ghidra to reverse-engineer
+5- It is not stripped so we can see the symbol tree and in the functions we identify main(), vuln() and flag().
+6- vuln() only call gets (so no buffer check)  and then puts what we priorly got (a 180 char array -> from this, we understand that the bof will happens w/ 180 bytes)
